@@ -2,7 +2,7 @@ const Koa = require("koa");
 const Router = require("@koa/router");
 const cors = require("@koa/cors");
 const ethers = require("ethers");
-const PaymentProcessor = require("../build/contracts/PaymentProcessor.json");
+const PaymentProcessor = require("../frontend/src/contracts/PaymentProcessor.json");
 const { Payment } = require("./db");
 
 const app = new Koa();
