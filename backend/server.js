@@ -14,7 +14,7 @@ const items = {
 }
 
 router.get("/api/getPaymentId/:itemId", async ctx => {
-    const getPaymentId = (Math.random() * 10000).toFixed(0);
+    const paymentId = (Math.random() * 10000).toFixed(0);
     await Payment.create({
         id: paymentId,
         itemId: ctx.params.itemId,
