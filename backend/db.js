@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 //Connect to the database:
 mongoose.connect(
     //INSERT the connection string here
+    "mongodb+srv://mainUser:testpass@cluster0.bqx6a.mongodb.net/ecomDapp?retryWrites=true&w=majority",
     { useNewUrlParses: true, useUnifiedTopology: true }
 );
 
